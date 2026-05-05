@@ -12,7 +12,7 @@ model.predict(
     source=os.path.join(code_folder,"../dataset/test/images"),       # 你的测试图片
     save=True,                 # 保存画框图
     save_txt=True,             # 保存检测结果
-    imgsz=640,
+    imgsz=640,                 # 输入图片转为640*640
     device="cpu",
     project=os.path.join(code_folder,"../results"),    # 输出根目录
     name="detection_result"     # 输出文件夹名称
