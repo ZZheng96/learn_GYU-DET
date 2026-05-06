@@ -17,7 +17,7 @@ if __name__ == "__main__":
         # data="dataset/data.yaml",    # 指定数据集配置文件（类别、路径等）
         data=os.path.join(code_folder, "../dataset/data.yaml"),
 
-        epochs=1,                       # 训练 5 轮（完整看一遍所有数据）
+        epochs=20,                       # 训练 epochs 轮（完整看一遍所有数据）
         imgsz=640,                      # 把图片统一缩放到 640x640 大小训练
         batch=2,                        # 一次喂 2 张图（CPU 必须小，否则卡死）
         device="cpu",                   # 用 CPU 训练
