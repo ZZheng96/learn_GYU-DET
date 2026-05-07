@@ -1,0 +1,3 @@
+Pillow>=10.0.0
+# PyYAML是可选的，用于支持YAML配置文件
+# PyYAML>=6.0
