@@ -35,26 +35,12 @@ pip install Pillow PyYAML
 ```
 
 ## 运行程序
-
-### 方式一：使用启动脚本（Windows，推荐）
-
-双击 `run.bat` 文件运行，如果出错会显示错误信息。
-
-### 方式二：使用安全启动器
-
-```bash
-python launcher.py
-```
-
-### 方式三：直接运行
-
 ```bash
 python yolo_viewer.py
 ```
 
 ### 注意事项
 
-- 如果双击 `.py` 文件闪退，请使用 `run.bat` 或 `launcher.py` 启动
 - 确保 Python 已正确安装并添加到系统 PATH
 - 运行前请先安装依赖：`pip install -r requirements.txt`
 
@@ -132,16 +118,16 @@ yolo_viewer/
 ```
 dataset/
 ├── data.yaml          # 配置文件
-├── images/
-│   ├── train/
+├── train/
+│   ├── images/
 │   │   ├── cat001.jpg
 │   │   ├── cat002.jpg
 │   │   └── dog001.jpg
-│   └── val/
-└── labels/
-    ├── train/
-    │   ├── cat001.txt    # 内容: 0 0.5 0.5 0.8 0.8
-    │   ├── cat002.txt
-    │   └── dog001.txt    # 内容: 1 0.3 0.4 0.6 0.7
-    └── val/
+│   └── labels/
+|       ├── cat001.txt    # 内容: 0 0.5 0.5 0.8 0.8
+│       ├── cat002.txt
+│       └── dog001.txt    # 内容: 1 0.3 0.4 0.6 0.7
+└── val/
+    ├── images/
+    └── labels/
 ```
